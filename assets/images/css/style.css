@@ -159,3 +159,43 @@ body{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+@media screen and (max-width: 375px){
+    .container{
+       display: grid;
+       max-width: 280px;
+    }
+    .container .card{
+        border-radius: 10px;
+        width: 280px;
+    }
+    .Review-paragraphs2, 
+    .Review-paragraphs{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+   
+    .card-1 {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        background-size: 35%;
+        background-position: 90% 0%;
+    }
+    .card-2 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    .card-3 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+    }
+    .card-4 {
+        grid-column: 1;
+        grid-row: 3 /4;
+    }
+    .card-5 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+}
