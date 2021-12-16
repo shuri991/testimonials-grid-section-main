@@ -17,22 +17,21 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Barlow', sans-serif;
-    font-size: 13px;
 }
 body{
     background-color: var(--Light-grayish-blue);
+    font-family: 'Barlow', sans-serif;
 }
 
 .container{
     display: grid;
-    grid-template-rows: max-content;
-    gap: 30px;
-    padding: 50px 50px;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 100%;
+    max-width: 890px;
+    margin: 5em auto;
 }
 .container .card{
-    max-width: max-content;
-    padding: 30px;
     border-radius: 10px;
 }
 .container div{
@@ -42,24 +41,28 @@ body{
 }
 .container img{
     border-radius: 50%;
-    width: 30px;
-   
+    width: 30px; 
 }
 .container .card-1 img{
     border: 2px solid hsl(263, 55%, 70%);
+    border-radius: 50%;
+    width: 30px;
 }
 .container .card-5 img{
     border: 2px solid var(--Moderate-violet);
+    border-radius: 50%;
+    width: 30px;
 }
 
 .container div h3{
     color:var(--White);
     font-weight: 500;
+    font-size: 13px;
 }
 .container div p{
     color: var(--White-gray);
     font-weight: 500;
-    font-size: smaller;
+    font-size: 10px;
 }
 .card-3 div h3{
     color:var(--Very-dark-grayish-blue);
@@ -77,56 +80,74 @@ body{
 }
 .Review-paragraphs1{
     color:var(--Light-grayish-blue);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-weight: 600;
-    line-height: 25px;
-    font-size: 1.5rem;
+    font-family: 'Barlow';
+    font-size: 16px;
+    
+}
+.Review-paragraphs{
+    margin-top: 15px;
+    color:var(--Light-gray-very);
+    font-size: 10px;
 }
 .Review-paragraphs2{
     color:var(--Light-gray-very);
-    line-height: 18px;
+    font-size: 10px;
+    margin-top: 12px;
 }
 .Review-paragraphs3{
     color:var(--Very-dark-grayish-blue);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-weight: 600;
-    line-height: 25px;
-    font-size: 1.5rem;
+    font-size: 16px;
+    font-family: 'Barlow';
+    
 }
 
 .card-1{
-    grid-column: 2 / 6;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
     background-color: var(--Moderate-violet);
-    background-image: url(/assets/images/bg-pattern-quotation.svg);
+    background-image: url(./bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 80%  0%;
     box-shadow: 2px 6px 50px var(--Light-gray-very);
+    padding: 15px 30px 20px 20px;
+    width: 480px;
 }
 .card-2{
-    grid-column: 6 / 8;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
     background-color: var(--Very-dark-grayish-blue);
     box-shadow: 2px 6px 50px var(--Light-gray-very);
+    padding: 15px 30px 20px 20px;
+    width: 205px;
 }
 .card-3{
-    grid-column: 8 / 10;
+    grid-column: 4 / 5;
     grid-row: 1 / 3;
     background-color: var(--White);
     box-shadow: 2px 6px 50px var(--Light-gray-very);
+    width: 205px;
+    padding: 15px 30px 15px 20px;
 }
 .card-4{
-    grid-column: 2 / 4;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
     background-color: var(--White);
     box-shadow: 2px 6px 50px var(--Light-gray-very);
+    width: 205px;
+    padding: 30px 35px 15px 15px;
 }
 .card-5{
-    grid-column: 4 / 8;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     background-color: var(--Very-dark-blackish-blue);
     box-shadow: 2px 6px 50px var(--Light-gray-very);
+    width: 480px;
+    padding: 30px 30px 20px;
 }
 .attribution { 
     font-size: 11px; 
